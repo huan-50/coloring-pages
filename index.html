@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>趣味涂色页</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <h1>趣味涂色页</h1>
+    
+    <div class="category-container">
+        <button id="animal-button" class="category-button">动物</button>
+        <button id="person-button" class="category-button">人物</button>
+    </div>
+
+    <div class="coloring-page-container">
+        <!-- 小螃蟹 -->
+        <div class="coloring-page animal">
+            <img src="images/crab-selfie.jpg" alt="小螃蟹涂色页" class="coloring-image" data-enlarged-src="小螃蟹.png">
+            <div class="image-desc">可爱的小螃蟹</div>
+            <div class="download-options">
+                <a href="pdfs/crab-selfie.pdf" download="小螃蟹涂色页.pdf">下载PDF</a>
+                <a href="小螃蟹.png" download="小螃蟹涂色页.png">下载PNG</a>
+            </div>
+        </div>
+
+        <!-- 小猪 -->
+        <div class="coloring-page animal">
+            <img src="images/pig-selfie.jpg" alt="小猪涂色页" class="coloring-image" data-enlarged-src="小猪.png">
+            <div class="image-desc">快乐的小猪</div>
+            <div class="download-options">
+                <a href="pdfs/pig-selfie.pdf" download="小猪涂色页.pdf">下载PDF</a>
+                <a href="小猪.png" download="小猪涂色页.png">下载PNG</a>
+            </div>
+        </div>
+
+        <!-- 小猫咪 -->
+        <div class="coloring-page animal">
+            <img src="images/cat-selfie.jpg" alt="小猫咪涂色页" class="coloring-image" data-enlarged-src="小猫咪.png">
+            <div class="image-desc">温柔的小猫咪</div>
+            <div class="download-options">
+                <a href="pdfs/cat-selfie.pdf" download="小猫咪涂色页.pdf">下载PDF</a>
+                <a href="小猫咪.png" download="小猫咪涂色页.png">下载PNG</a>
+            </div>
+        </div>
+
+        <!-- 小狐狸 -->
+        <div class="coloring-page animal">
+            <img src="images/fox-selfie.jpg" alt="小狐狸涂色页" class="coloring-image" data-enlarged-src="小狐狸.png">
+            <div class="image-desc">机灵的小狐狸</div>
+            <div class="download-options">
+                <a href="pdfs/fox-selfie.pdf" download="小狐狸涂色页.pdf">下载PDF</a>
+                <a href="小狐狸.png" download="小狐狸涂色页.png">下载PNG</a>
+            </div>
+        </div>
+
+        <!-- 小女孩 -->
+        <div class="coloring-page person">
+            <img src="images/girl-selfie.jpg" alt="小女孩涂色页" class="coloring-image" data-enlarged-src="小女孩.png">
+            <div class="image-desc">甜美的小女孩</div>
+            <div class="download-options">
+                <a href="pdfs/girl-selfie.pdf" download="小女孩涂色页.pdf">下载PDF</a>
+                <a href="小女孩.png" download="小女孩涂色页.png">下载PNG</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 图片放大模态框 -->
+    <div id="enlarge-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="enlarge-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
